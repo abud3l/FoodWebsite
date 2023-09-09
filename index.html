@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Normalize style -->
+        <link rel="stylesheet" href="CSS/normalize.css">
+        <!-- Font Awesom laibry -->
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <!-- main css style file -->
+        <link rel="stylesheet" href="CSS/mainCssFile.css">
+</head>
+<body>
+    
+    <!-- start header -->
+    <div class="header">
+        <div class="container">
+            <div class="logo-image"><img src="images/Frame.png" alt="logo"></div>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Service <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Offers</a></li>
+            </ul>
+            <div class="right-side-service">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+                <div class="call-icon"><i class="fa-solid fa-phone-volume"></i> <span class="concat">conact</span></div>
+                <i class="fa-solid fa-bars list" onclick="showNav()"></i>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <div class="landing">
+        <div class="container">
+            <div class="lift-side">
+                <h1>Dive into Delights Of Delectable <span>Food</span></h1>
+                <p class="description">Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship</p>
+
+                <button class="order">Order Now</button>
+                <button class="watch">Watch Video <i class="fa-solid fa-play"></i></button>
+            </div>
+            <div class="right-side">
+                <img src="images/Group 9.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let nav = document.querySelector(".nav");
+        let show = true;
+        function showNav() {
+            if(show){
+                nav.style.display = "flex";
+                show = !show;
+            } else {
+                nav.style.display = "none";
+                show = !show;
+                
+            }
+        }
+
+    </script>
+</body>
+</html>
